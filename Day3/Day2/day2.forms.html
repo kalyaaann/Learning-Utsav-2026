@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms </title>
+</head>
+<body> 
+    <p><strong> Student Details</strong></p>
+            <hr>
+    <form>
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter Name"><br>
+<br>
+        <label for="number">Enter your Number:</label><br>
+        <input type="number" id="number" name="number" placeholder="Enter your number"><br>
+    <br>
+<hr>
+    <label for="class">Select your class </label><br>
+    <select id="class"name="class" size="1">
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+        <option value="4">Grade 4</option>
+        <option value="5">Grade 5</option>
+        <option value="6">Grade 6</option>
+        <option value="7">Grade 7</option>
+        <option value="8">Grade 8</option>
+        <option value="9">Grade 9</option>
+        <option value="10">Grade 10</option>
+    </select>
+<hr>
+  <p>Select your gender</p>
+  <input type="radio" id="Male" name="gender" value="Male">
+  <label for="Male">Male</label><br>
+
+  <input type="radio" id="Female" name="gender" value="Female">
+  <label for="Female">Female</label><br>
+
+  <input type="radio" id="Others" name="gender" value="Others">
+  <label for="Others">Others</label><br>
+<hr>
+  <label for="DOB">Select your Date of Birth <label>
+    <br>
+  <input type="date" id="DOB" name="DOB">
+<hr>
+<p> <strong> Write something about yourself </strong></p>
+<textarea name="Message" id="Message" rows="5" cols="30"></textarea>
+<br>
+<br>
+<hr>
+Select your house : 
+<input list="house" name="house">
+  <datalist id="house">
+    <option value="Red">
+    <option value="Blue">
+    <option value="Yellow">
+    <option value="Green">
+  </datalist>
+  <br><br>
+ <input type="submit" value="Submit Form" >
+</form>
+</body>
+</html>
