@@ -1,0 +1,396 @@
+
+    *{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    /* background-color: #f4f7fb; */
+}
+.navbar{
+    height: 80px;
+    background-color: #1c252e;
+    color: white;
+    width: 1515px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
+   /* margin-left: 15px; */
+   /* margin-right: 10px; */
+}
+.border:hover{
+  
+    border: 1.5px solid white;
+}
+.logo{
+    height: 50px;
+    width: 100px;
+}
+.esewalogo{
+    background-image: url(esewalogo.png);
+    height: 50px;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.search{
+    height: 40px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #454545;
+    
+    
+
+}
+.searchicon{
+    height: 35px;
+    width: 25px;
+   margin-left: 0px;
+    margin: 5px;
+    display: flex;
+    background-color: #454545;
+   border: none ;
+    align-items: center;
+    border-radius: 4px;
+}
+
+
+.searchbar{
+    height: 34px;
+    width: 100%;
+    background-color: #454545;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+
+}
+
+
+.esewaid{
+    background-color: #454545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.idlogo{
+   background-color: #454545;
+    height: 35px;
+    width: 25px;
+   margin-left: 0px;
+    margin: 5px;
+    display: flex;
+   border: none ;
+    align-items: center;
+    border-radius: 4px;
+}
+.idsearch{
+    height: 34px;
+    width: 100%;
+    background-color: #454545;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: white;
+      font-weight: 700;
+
+}
+
+
+.esewapass{
+ 
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    display: flex;
+
+   
+}
+
+.passicon{
+    background-color: #454545;
+    height: 50px;
+    width: 35px;
+   margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border:none ;
+    color: white;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:  4px;
+ 
+}
+
+.passenter{
+     height: 48px;
+    width: 200px;
+    background-color: #454545;
+    border: none;
+    outline: none;
+    color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:  4px;
+    
+    
+}
+.forgetpass{
+    margin-top: 5px;
+    font-size: 0.65rem;
+    color: white;
+    padding-top: 58px;
+    padding-left: 15px;
+
+}
+
+.login{
+    background-color: #60bb46;
+    color: white;
+    border: #FFFFFF;
+    height: 40px;
+    width: 100px;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+     border-radius: 4%;
+}
+.register{
+      background-color: #454545;
+    color: white;
+    border:3px solid #60bb46;
+    height: 40px;
+    width: 100px;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+}
+
+
+
+.paneloption{
+    height: 40px;
+    background-color: #60bb46;
+    display: flex;
+    color:white;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    
+
+   
+    /* justify-content: space-evenly; */
+    /* padding-left: 40px; */
+
+    
+}
+.paneloption p {
+    display: inline;
+    margin-left: 20px;
+
+}
+.paneloption{
+    width: 1515px;
+}
+
+
+.heroimage{
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+    height:455px;
+    /* width: 1200px; */
+    width: 100%;
+    background-color: #F5F7FD;
+  
+    background-image: url(heroimageesewa.jpg);
+
+    margin-top: 150px;
+    
+    background-size: cover;
+}
+
+.heromenu{
+    height: 400px;
+    width: 250px;
+    background-color:rgba(255, 255, 255, 0.863) ;
+    margin: 0px;
+     position:static;
+     margin-top:  150px;
+}
+.menu{
+    height: 50px;
+    width: 250px;
+    background-color: #F5F7FD;
+    border: 5px solid white ;
+    display: flex;
+   padding-left: 15px;
+    align-items: center;
+    font font-weight: 600;
+     
+    
+
+}
+
+.heropage{
+ position:static;
+ 
+
+ 
+    width: 1480px;
+    display: flex;
+    margin-left: 10px;
+     background-color: #F5F7FD;    
+}
+
+
+
+
+.contentpanel{
+    width: 1480px;
+    padding: 20px;
+     font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: black
+
+  
+  /* padding: 20px; */
+ 
+}
+.contentpanelhead{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  justify-content: space-around;
+  text-align: end;
+   margin-inline-start: 15px;
+   margin-inline-end: 0px;
+  align-items: center;
+  /* margin-left: 5px;
+  margin-right:5px;
+  margin-top: 5px; */
+  background-color: white;
+
+}
+.contentpanelbox{
+    width: 200px;
+    height: 250px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  background: white;
+  /* padding: 2px; */
+  border-radius: 8px;
+  
+}
+
+.boximage{
+    background-size: contain;
+    background-color: #f4f7fb;
+    height: 150px;
+    background-repeat: no-repeat;
+
+}
+.boxheading{
+
+     display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+
+.boxview{
+    color: #4cc24a;
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: 500;
+  
+}
+.box{
+    display: flex;
+    padding-top: 25px;
+    padding-inline-start: 150px;
+    padding-inline-end: 150px;
+    /* background-color: white; */
+     background-color: #f4f7fb;
+}
+
+
+
+.footpanel{
+    margin: 0px;
+    padding: 0px;
+}
+.footpanel2{
+        background-color: #1c252e;
+    color: white;
+    font-size: 0.85rem;
+      text-align: center;
+      
+    height:75px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.logoo{
+    background-image: url(esewalogo.png);
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    
+}
+
+
+.footpanel1{
+    background-color: #28323c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+   padding-top: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

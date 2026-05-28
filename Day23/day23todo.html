@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Tasks to do </h2>
+
+      <!-- Alert Message -->
+      <div class="alert alert-danger" id="alertMessage" style="display: none">
+        Please enter a valid task!
+      </div>
+
+      <!-- Input and Button to Add Task -->
+      <div class="mb-3">
+        <input
+          type="text"
+          id="taskInput"
+          class="form-control"
+          placeholder="Enter your task here"
+        />
+      </div>
+
+      <button id="addTaskBtn" class="btn btn-primary w-100">Add Task</button>
+
+      <!-- Task List -->
+      <div id="taskList" class="mt-4">
+        <!-- Task list items will be added here -->
+      </div>
+    </div>
+    <script>
+      const addTaskBtn = document.getElementById("addTaskBtn");
+      const taskInput = document.getElementById("taskInput");
+      const taskList = document.getElementById("taskList");
+      const alertMessage = document.getElementById("alertMessage");
+      // Function to add a new task
+
+      addTaskBtn.addEventListener("click", () => {
+        console.log("clicked");
+        const taskText = taskInput.value.trim();
+        console.log(taskText);
+        if (taskText == "") {
+          alertMessage.style.display = "block"; //show alert for empty input
+          setTimeout(() => (alertMessage.style.display = "none"), 7000);
+          return;
+        }
+        // Hide alert if input is valid
+        alertMessage.style.display = "none";
+
+        // Create task element
+        const taskDiv = document.createElement("div");
+        taskDiv.classList.add("d-flex", "bg-light", "p-3", "rounded", "mb-2");
+
+        // Task content (60% width)
+        const taskContent = document.createElement("span");
+        taskContent.textContent = taskText;
+        taskContent.style.flex = "0 0 60%"; // This sets width to 60%
+
+        // Mark as completed button (20% width)
+        const completeBtn = document.createElement("button");
+        completeBtn.textContent = "Complete";
+        completeBtn.classList.add("btn", "btn-success", "btn-sm");
+        completeBtn.style.flex = "0 0 20%"; // This sets width to 20%
+
+        // Delete button (20% width) with margin-left for spacing
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Delete";
+        deleteBtn.classList.add("btn", "btn-danger", "btn-sm");
+        deleteBtn.style.flex = "0 0 20%"; // This sets width to 20%
+        deleteBtn.style.marginLeft = "5px"; // Add some space between the buttons
+
+        // Append task content and buttons to task div
+        taskDiv.appendChild(taskContent);
+        taskDiv.appendChild(completeBtn);
+        taskDiv.appendChild(deleteBtn);
+
+        // Add task to the task list
+        taskList.appendChild(taskDiv);
+
+        // Clear input field
+        taskInput.value = "";
+        // Mark task as completed
+        completeBtn.addEventListener("click", function () {
+          taskContent.classList.toggle("text-decoration-line-through");
+
+          if (taskContent.classList.contains("text-decoration-line-through")) {
+            completeBtn.textContent = "Undo";
+            completeBtn.classList.remove("btn-success"); // Remove the green color
+            completeBtn.classList.add("btn-warning"); // Add yellow color
+          } else {
+            completeBtn.textContent = "Complete";
+            completeBtn.classList.remove("btn-warning"); // Remove the yellow color
+            completeBtn.classList.add("btn-success"); // Add the green color back
+          }
+        });
+
+        // Delete task
+        deleteBtn.addEventListener("click", function () {
+          taskDiv.remove();
+        });
+      });
+    </script>
+  </body>
+</html>

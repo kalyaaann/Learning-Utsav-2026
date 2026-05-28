@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+    font-size: large;
+    text-align: justify;
+     text-align: center;
+     
+}
+button{
+    background-color: #f08804;
+    width: 50px;
+    height: 30px;
+}
+#input{
+    width: 200px; 
+    height: 30px;
+}
+#logo{
+    color: #f08804;
+}
+a{
+    margin-right: 200px;
+    text-align: justify;
+    align-content: center;
+}
+
+

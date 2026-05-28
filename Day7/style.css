@@ -1,0 +1,30 @@
+/* 
+body {
+    background-color:#A7AAE1;
+}
+h1{
+    background-color: #5D866C;
+}
+p{
+    color: #F5F5F0;
+}
+button{
+    background-color: #F5F5F0;
+    color: #C2A68C;
+} */
+
+
+#box{
+    background-color: blue;
+   color: beige;
+}
+.heading{
+    color: red;
+}
+
+button{
+    background-color: green;
+}
+p{
+    text-align: left;
+}
